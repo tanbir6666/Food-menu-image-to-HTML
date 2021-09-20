@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starters & Salads</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"
+          integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css"
+          integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/common.min.css">
+    <style>
+        .jd-slider {
+          margin: 45px 0;
+      }
+
+      .jd-slider .slide-inner::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 0;
+          border: 1px solid #888;
+      }
+
+      .jd-slider .slide-area > li {
+          border-right: 1px solid #888;
+          border-left: 0;
+          box-sizing: border-box;
+          text-align: center;
+      }
+
+      .jd-slider .slide-area > li:first-child {
+          border-left: 1px solid #888;
+      }
+
+      .jd-slider .slide-area > li > a {
+          display: block;
+          height: 200px;
+          line-height: 200px;
+          font-size: 3em;
+          font-weight: bold;
+          outline: 0;
+      }
+
+      .jd-slider .controller {
+          /* margin: 10px 0 0; */
+      }
+
+      .jd-slider.slider3 .slide-area > li,
+      .jd-slider.slider3-2 .slide-area > li,
+      .jd-slider.slider3-3 .slide-area > li {
+          width: 50%;
+      }
+
+      .jd-slider.slider3 .slide-area > li:nth-child(2),
+      .jd-slider.slider3-2 .slide-area > li:nth-child(2),
+      .jd-slider.slider3-3 .slide-area > li:nth-child(2) {
+          display: block;
+      }
+
+      .jd-slider.slider4 .slide-area > li:first-child {
+          background-color: #a66;
+      }
+
+      .jd-slider.slider4 .slide-area > li:first-child + li {
+          background-color: #6a6;
+      }
+
+      .jd-slider.slider4 .slide-area > li:first-child + li + li {
+          background-color: #66a;
+      }
+
+      .jd-slider.slider4 .slide-area > li:first-child + li + li + li {
+          background-color: #aaa;
+      }
+  </style>
+    <style>
+        *{
+            font-size: 25px !important;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+            letter-spacing:0.5px;
+        }
+        .sizeContainer{
+            width:723px;
+            /* height:1280px; */
+            height:1360px;
+
+            margin: auto;
+            margin-top: 25px;
+            box-shadow: 0px 0px 10px #00000050;
+            padding-top:0.5px;
+            overflow: hidden;
+            border-radius:10px;
+            
+        }
+        .headerTitle{
+            letter-spacing:3px;
+            width: 92%;
+            border-top-right-radius:16px ;
+            border-bottom-right-radius: 16px;
+            background-color:#202020;
+            color:white;
+            padding: 15px 25px;
+            font-size:35px;
+            text-transform: uppercase;
+            margin-top: 20px;
+            font-weight:600;
+            padding-left: 60px;
+        }
+        .itemsList{
+            width: 84%;
+            margin: auto;
+            margin-top:22px;
+            
+
+        }
+        .eachItem{
+           display: flex;
+           align-items: flex-start;
+           justify-content: space-between;
+           margin-top: 25px;
+        }
+        .listHeader{
+            font-weight:bold;
+            font-size: 1.1rem !important;
+        }
+        .listSubtitle{
+            font-size: 0.90rem !important;
+            font-weight: 500;
+            color: #353535;
+        }
+        .rightSection{
+            font-weight:700;
+            color:#e78d39;
+            font-size: 1.1rem !important;
+        }
+        .extra{
+            font-weight:700;
+            color:#e78d39;
+            font-size: 1.0rem !important;
+        }
+        .slider{
+            position: relative;
+            width: 100%;
+            margin-top: 25px;
+        }
+        .slide_img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            transition: 1s ease-in-out;
+            z-index: 0;
+            opacity: 100%;
+        }
+        .slideImg{
+
+        }
+        .fa-2x{
+            font-size: 40px !important;
+            padding: 25px;
+            border-radius: 50%;
+            background-color: #00000010;
+            height:50px;
+            width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .fa-2x:hover{
+            border-bottom: none !important;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sizeContainer">
+            <div class="headerTitle">
+                Starters & Salads
+            </div>
+            <div class="itemsList">
+                <div class="eachItem">
+                    <div class="leftSection">
+                        <div class="listHeader">
+                            Chorizo o Morcilla  
+                        </div>
+                        <div class="listSubtitle">
+                            Sausage or Blood Sausage
+                        </div>
+                    </div>
+                    <div class="rightSection">
+                        2.90
+                    </div>
+                </div><div class="eachItem">
+                    <div class="leftSection">
+                        <div class="listHeader">
+                           Provoleta
+                        </div>
+                        <div class="listSubtitle">
+                            Melted Provolone Cheese with Chorizo
+                        </div>
+                    </div>
+                    <div class="rightSection">
+                        8.90
+                    </div>
+                </div>
+                <div class="eachItem">
+                    <div class="leftSection">
+                        <div class="listHeader">
+                           Chorileta
+                        </div>
+                        <div class="listSubtitle">
+                            Melted Provolone Cheese with Chorizo
+                        </div>
+                    </div>
+                    <div class="rightSection">
+                        9.90
+                    </div>
+                </div>
+                <div class="eachItem">
+                    <div class="leftSection">
+                        <div class="listHeader">
+                            Empanadas 
+                        </div>
+                        <div class="listSubtitle">
+                            
+                        </div>
+                    </div>
+                    <div class="rightSection">
+                        2.90
+                    </div>
+                </div>
+                <div class="eachItem">
+                    <div class="leftSection">
+                        <div class="listHeader">
+                            Molleja  
+                        </div>
+                        <div class="listSubtitle">
+                           Sweet Bread
+                        </div>
+                    </div>
+                    <div class="rightSection">
+                        7.90
+                    </div>
+                </div>
+                <div class="eachItem">
+                    <div class="leftSection">
+                        <div class="listHeader">Arugula Salad
+                        </div>
+                        <div class="listSubtitle">
+                           Arugula, Tomatoes,Parmesan Cheese <br>
+                           dresses with Honey Mustard Vinaigrette
+
+                        </div>
+                    </div>
+                    <div class="rightSection">
+                        9.90
+                    </div>
+                </div>
+                <div class="eachItem">
+                    <div class="leftSection">
+                        <div class="listHeader">
+                            Mixed Salad
+                        </div>
+                        <div class="listSubtitle">
+                            Letucce , Tomatoes & Oninos <br>
+                            dresses with Red Wine Vinaigrette
+                        </div>
+                    </div>
+                    <div class="rightSection">
+                       6.90
+                    </div>
+                </div> 
+               <div class="extra">
+                   Add Chiken 4.90 or Meat 5.90 to Salads
+               </div>
+
+
+            </div>
+
+
+            <section class="jd-slider slider2">
+       
+                <div class="slide-inner">
+                    <ul class="slide-area">
+                        <li>
+                           <img class="slideImg" src="img/fierroMenuMorcilla2.jpg" alt="" srcset="">
+                        </li>
+                        <li>
+                            <img class="slideImg" src="img/fierroMenuProvoleta2.jpg" alt="" srcset="">
+
+                        </li>
+                        
+                        
+                    </ul>
+                    <a class="prev" href="#">
+                        <i class="fas fa-angle-left fa-2x"></i>
+                    </a>
+                    <a class="next" href="#">
+                        <i class="fas fa-angle-right fa-2x"></i>
+                    </a>
+                </div>
+                <div class="controller">
+                    <a class="auto" href="#">
+                        <i class="fas fa-play fa-xs"></i>
+                        <i class="fas fa-pause fa-xs"></i>
+                    </a>
+                    <div class="indicate-area"></div>
+                </div>
+            </section>
+            <!-- <div class="slider">
+                <img class="slide_img" src="img/fierroMenuMorcilla2.jpg" alt="" srcset="">
+                <img class="slide_img" src="img/fierroMenuProvoleta2.jpg" alt="" srcset="">
+            </div> -->
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery.jdSlider-latest.min.js"></script>
+    <script>
+        window.onload = function () {
+            $('.slider1').jdSlider();
+            $('.slider2').jdSlider({
+                wrap: '.slide-inner',
+                isAuto: true,
+                isLoop: true
+            });
+            $('.slider3').jdSlider({
+                wrap: '.slide-inner',
+                slideShow: 2,
+                slideToScroll: 2,
+                isLoop: false,
+                responsive: [{
+                    viewSize: 768,
+                    settings: {
+                        slideShow: 1,
+                        slideToScroll: 1
+                    }
+                }]
+            });
+            $('.slider3-2').jdSlider({
+                wrap: '.slide-inner',
+                slideShow: 2,
+                slideToScroll: 1,
+                isLoop: true,
+                responsive: [{
+                    viewSize: 768,
+                    settings: {
+                        slideShow: 1
+                    }
+                }]
+            });
+            $('.slider3-3').jdSlider({
+                wrap: '.slide-inner',
+                slideShow: 2,
+                slideToScroll: 2,
+                isLoop: true,
+                responsive: [{
+                    viewSize: 768,
+                    settings: {
+                        slideShow: 1,
+                        slideToScroll: 1
+                    }
+                }]
+            });
+            $('.slider4').jdSlider({
+                wrap: '.slide-inner',
+                isSliding: false,
+                isAuto: true,
+                isLoop: true,
+                isDrag: false
+            });
+        };
+    </script>
+
+
+    <!-- <script>
+        let slideImg=document.querySelectorAll(".slide_img")
+
+        let index=0
+
+        setInterval(() => {
+                index+=1
+                if(index>=slideImg.length){
+                    index=0
+                }
+                for(let x=0;x<slideImg.length;x++){
+                slideImg[x].style.opacity="0%"
+
+                }
+                slideImg[index].style.opacity="100%"
+
+            
+        }, 6000);
+
+    </script> -->
+</body>
+</html>
